@@ -31,6 +31,7 @@
         <div class="cake-container">
             <div class="cake" id="cake"></div>
         </div>
+        <button id="startButton">🎂 Blow the candles!</button>
     </div>
 
     <script>
@@ -159,7 +160,9 @@
             }, 1200);
         }
 
-        startMicDetection();
+        document.getElementById("startButton").addEventListener("click", () => {
+            startMicDetection();
+        });
     </script>
 </body>
 
